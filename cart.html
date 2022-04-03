@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>
+        Cart | Fashion Collection
+    </title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!---------link CSS file----------->
+    <link rel="stylesheet" href="style.css">
+    <!--------------------------------->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+
+    <!---------Google Fonts------------>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!--------------------------------->
+
+</head>
+
+<body>
+
+    <!-----------------------Header Section Start---------------------------------------->
+    <div class="header">
+
+        <div class="container">
+
+            <div class="navbar">
+                <!------------LOGO--------------------->
+                <div class="logo">
+                    <a href="index.html"> <img src="image/logo.png" width="125px" height="75px"> </a>
+                </div>
+                <!------------BUTTONS------------------>
+                <nav>
+                    <ul id="MenuItems">
+                        <li> <a href="index.html" class="btn"> Home </a> </li>
+                        <li> <a href="products.html" class="btn"> Product </a> </li>
+                        <li> <a href="" class="btn"> About </a> </li>
+                        <li> <a href="" class="btn"> Account </a> </li>
+
+                    </ul>
+                </nav>
+                <!-------------CART---------------------->
+                <a href="cart.html"> <img src="image/cart.png" width="40px" height="40px"> </a>
+                <img src="image/menu.png" class="menu-icon" onclick="menutoggle()">
+
+
+            </div>
+
+        </div>
+
+    </div>
+    <!---------------------------Header Section End----------------------------------------->
+
+    <!---------------------------Under Maintenance Section Start---------------------------->
+
+    <h1 class="carth1">This Section is Currently Under Maintenance</h1>
+
+    <!---------------------------Under Maintenance Section End------------------------------>
+
+    <!---------------------------Cart Section Start--------------------------------------
+
+    <div class="small-container cart-page">
+
+        <table>
+
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+            </tr>
+
+            <tr>
+                <td>Product Img</td>
+                <td> <input type="number" value="1"> </td>
+                <td> &#8377 999 </td>
+            </tr>
+
+        </table>
+
+    </div>
+
+    -----------------------Cart Section End----------------------------------------->
+
+
+    <!---------------------------Footer Section Start----------------------------------------------------------------->
+
+    <div class="footer">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="footer-col-1">
+
+                    <ul class="footer-ul">
+                        <li> Coupons </li>
+                        <li> Offers </li>
+                        <li> Best Deal </li>
+                        <li> Return Policy </li>
+
+
+                    </ul>
+
+                </div>
+
+                <div class="footer-col-2">
+
+                    <a href="#"> <img src="image/logo.png" width="300px"> </a>
+
+                </div>
+
+                <div class="footer-col-3">
+
+                    <a href="#">
+                        <h2 class="footer-h2"> About </h2>
+                    </a>
+                </div>
+
+                <div class="footer-col-4">
+
+                    <h1 class="footer-h1"> Thank You </h1>
+                    <p> Visit Again </p>
+
+                </div>
+
+            </div>
+
+            <hr>
+            <p class="copyright">Copyright 2022 - Mr. Singh</p>
+
+        </div>
+
+    </div>
+
+    <!---------------------------Footer Section End----------------------------------------------------------------->
+
+    <!---------------------------link main.js---------------------------------------------------------->
+    <script src="main.js"></script>
+
+    <!---------------------------js for Toggle Menu----------------------------------------------------------------->
+
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "500px";
+            } else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
